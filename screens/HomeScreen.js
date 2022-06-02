@@ -64,9 +64,10 @@ const styles = StyleSheet.create({
   buttonsContainer: {
     alignSelf: 'center',
     marginTop: 50,
+    borderRadius:20,
   },
   buttons: {
-    backgroundColor:"coral",
+    backgroundColor:"lightblue",
     alignItems: 'center',
     justifyContent: 'center',
     borderWidth: 1,
