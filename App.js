@@ -6,6 +6,7 @@ import Constants from 'expo-constants';
 
 // Você pode importar de arquivos locais
 import HomeScreen from './screens/HomeScreen';
+import Tela_Pos_Voto from './screens/TelaPosVoto';
 
 export default class App extends React.Component {
   render() {
@@ -18,7 +19,8 @@ export default class App extends React.Component {
 }
 
 var AppNavigator = createSwitchNavigator({
-  HomeScreen: HomeScreen
+  HomeScreen: HomeScreen,
+  TelaPosVoto: Tela_Pos_Voto
 });
 
 const AppContainer = createAppContainer(AppNavigator);
