@@ -12,17 +12,31 @@ import AppHeader from '../components/AppHeader';
 import db from '../config';
 
 export default class HomeScreen extends Component {
+  constructor(){
+    super();
+    this.state = {
+      teamA: 0,
+      teamB: 0
+    }
+  }
+
 
   teamA(){
-   db.ref('/').update({
-     'teamA':1
+  this.setState({
+    teamA: this.state.teamA+1
+  })
+  db.ref('/').update({
+     'teamA':this.state.teamA+1
    })
  }
 
  teamB(){
-   console.log(db);
-   db.ref('/').update({
-     'teamB':2
+  console.log(db);
+  this.setState({
+    teamB: this.state.teamB+1
+  })
+  db.ref('/').update({
+     'teamB': this.state.teamB+1
    })
  }
 
@@ -43,13 +57,13 @@ export default class HomeScreen extends Component {
             <Text style={{ textAlign: 'center',fontSize:25 }}>Vote Aqui</Text>
             <TouchableOpacity
               style={styles.buttons}
-              onPress ={this.teamA()}>
+              onPress ={()=>this.teamA()}>
               <Text style={{ fontSize:20}}>Equipe A</Text>
             </TouchableOpacity>
 
             <TouchableOpacity
               style={styles.buttons}
-              onPress ={this.teamB()}>
+              onPress ={()=>this.teamB()}>
               <Text style={{ fontSize:20}}>Equipe B</Text>
             </TouchableOpacity>
 
