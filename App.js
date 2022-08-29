@@ -4,7 +4,7 @@ import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import Constants from 'expo-constants';
 
 
-// Você pode importar de arquivos locais
+// Macaco Macaco Macaco Macaco2
 import HomeScreen from './screens/HomeScreen';
 
 export default class App extends React.Component {
