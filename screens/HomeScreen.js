@@ -34,13 +34,13 @@ export default class HomeScreen extends Component {
           <View style={styles.buttonsContainer}>
             <TouchableOpacity>
               <Image
-                style={{ width: 300, height: 220, marginLeft: 5 }}
-                source={require('../assets/TeamImage.png')}
+                style={{ width: 300, height: 300, marginLeft: 5 }}
+                source={require('../assets/multidao.png')}
               />
             </TouchableOpacity>
           </View>
           <View style={styles.ratingContainer}>
-            <Text style={{ textAlign: 'center',fontSize:25 }}>Vote Aqui</Text>
+            <Text style={{ textAlign: 'center',fontSize:25, fontWeight: "bold" }}>Vote Aqui</Text>
             <TouchableOpacity
               style={styles.buttons}
               onPress ={this.teamA()}>
@@ -66,10 +66,10 @@ const styles = StyleSheet.create({
     marginTop: 50,
   },
   buttons: {
-    backgroundColor:"coral",
+    backgroundColor:"#EFC050",
     alignItems: 'center',
     justifyContent: 'center',
-    borderWidth: 1,
+    borderWidth: 2,
     borderRadius: 15,
     margin:10,
     width: 150,
