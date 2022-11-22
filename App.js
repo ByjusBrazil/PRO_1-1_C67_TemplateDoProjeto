@@ -12,6 +12,9 @@ export default class App extends React.Component {
     return (
       <View>
         <AppContainer/>
+	  <Text>
+		Flamengo
+	  <Text/>
       </View>
     );
   }
