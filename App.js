@@ -4,7 +4,7 @@ import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import Constants from 'expo-constants';
 
 
-// Você pode importar de arquivos locais
+// Você pode importar de arquivos locais aqui ou ali ou aquele outro ou aqui perto em outro sistema solar
 import HomeScreen from './screens/HomeScreen';
 
 export default class App extends React.Component {
