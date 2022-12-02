@@ -3,7 +3,6 @@ import { Text, View, StyleSheet } from 'react-native';
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import Constants from 'expo-constants';
 
-
 // Você pode importar de arquivos locais
 import HomeScreen from './screens/HomeScreen';
 
