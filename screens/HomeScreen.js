@@ -26,6 +26,14 @@ export default class HomeScreen extends Component {
    })
  }
 
+ reset(){
+  console.log(db);
+  db.ref('/').update({
+    'teamA':0,
+    'teamB':0
+  })
+}
+
   render() {
     return (
       <View>
@@ -43,16 +51,21 @@ export default class HomeScreen extends Component {
             <Text style={{ textAlign: 'center',fontSize:25 }}>Vote Aqui</Text>
             <TouchableOpacity
               style={styles.buttons}
-              onPress ={this.teamA()}>
+              onPress ={this.teamA}>
               <Text style={{ fontSize:20}}>Equipe A</Text>
             </TouchableOpacity>
 
             <TouchableOpacity
               style={styles.buttons}
-              onPress ={this.teamB()}>
+              onPress ={this.teamB}>
               <Text style={{ fontSize:20}}>Equipe B</Text>
             </TouchableOpacity>
 
+            <TouchableOpacity
+              style={styles.buttons}
+              onPress ={this.reset}>
+              <Text style={{ fontSize:20}}>Resetar</Text>
+            </TouchableOpacity>
           </View>
         </View>
       </View>
