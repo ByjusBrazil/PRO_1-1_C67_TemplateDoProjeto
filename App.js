@@ -16,7 +16,7 @@ export default class App extends React.Component {
     );
   }
 }
-
+//crianaveacaodetroca
 var AppNavigator = createSwitchNavigator({
   HomeScreen: HomeScreen
 });
