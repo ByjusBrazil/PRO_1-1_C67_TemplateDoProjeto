@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import Constants from 'expo-constants';
+import Config from "./config";
 
 
 // Você pode importar de arquivos locais
@@ -22,3 +23,5 @@ var AppNavigator = createSwitchNavigator({
 });
 
 const AppContainer = createAppContainer(AppNavigator);
+
+
