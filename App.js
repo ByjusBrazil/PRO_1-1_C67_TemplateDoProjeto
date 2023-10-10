@@ -14,7 +14,7 @@ export default class App extends React.Component {
         <AppContainer/>
       </View>
     );
-  }
+  }a
 }
 
 var AppNavigator = createSwitchNavigator({
