@@ -22,7 +22,7 @@ export default class HomeScreen extends Component {
  teamB(){
    console.log(db);
    db.ref('/').update({
-     'teamB':2
+     'teamB':1
    })
  }
 
@@ -53,6 +53,8 @@ export default class HomeScreen extends Component {
               <Text style={{ fontSize:20}}>Equipe B</Text>
             </TouchableOpacity>
 
+            <Text style={{fontSize:24, marginTop:10, textAlign:'center'}}>Obrigado por votar!</Text>
+
           </View>
         </View>
       </View>
@@ -66,7 +68,7 @@ const styles = StyleSheet.create({
     marginTop: 50,
   },
   buttons: {
-    backgroundColor:"coral",
+    backgroundColor:"cornflowerblue",
     alignItems: 'center',
     justifyContent: 'center',
     borderWidth: 1,
